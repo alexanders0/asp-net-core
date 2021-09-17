@@ -9,10 +9,10 @@ namespace asp_net_core.Controllers
 
         public IActionResult Index()
         {
-            var school = new School();
-            school.SchoolId = Guid.NewGuid().ToString();
-            school.FoundationYear = 2005;
-            school.Name = "Khasiri School";
+            var school = new Escuela();
+            school.UniqueId = Guid.NewGuid().ToString();
+            school.AñoDeCreacion = 2005;
+            school.Nombre = "Khasiri School";
 
             ViewBag.CosaDinamica = "La monja";
 
